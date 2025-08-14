@@ -17,9 +17,19 @@
     <p> Result :
         <span id="resultHere"></span>
     </p>
-    <button> Accept Input</button>
+    <button onclick="check()"> accept input </button>
 
-    <script src="script2.js"></script>
+    <script>
+        function check() {
+            let age = document.getElementById("age").value;
+            let maxAge = document.getElementById("maxAge").value;
+            let numPerDay = document.getElementById("numPerDay").value;
+            let totalRequired = (Number(numPerDay)*365) * (Number(maxAge) - Number(age));
+
+            document.getElementById("resultHere").innerText = 'You will need ' + totalRequired + ' to last you until the ripe old age of ' + maxAge;
+        }
+    </script>
+    
 
 </body>
 </head>

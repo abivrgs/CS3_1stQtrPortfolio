@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Sample use of the input tag</h2>
+    <label> What is your greeting?</label>
+        <input id="greetings !" />
+</label>
+<button onclick="checkGreet()"> show greeting </button></p>
+<p>Result: <span id=greet> </span></p>
+<script>
+    function checkGreet() {
+        let dGreet = document.getElementById("greetings !").value;
+        document.getElementById("greet").innerHTML = `<b>${dGreet}</b>`;
+    }
+</script>
+
+</body>
+</html> 
+</DOCTYPE>
